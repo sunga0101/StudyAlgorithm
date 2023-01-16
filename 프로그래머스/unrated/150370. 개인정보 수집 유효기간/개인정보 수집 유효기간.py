@@ -30,8 +30,6 @@ def solution(today, terms, privacies):
             start_mm =12  #"2022.12.27"  
             start_yyyy -= 1 #"2021.12.27"  
             
-        
-        print("!!",start_yyyy,start_mm,start_dd)
         if today_yyyy > start_yyyy:
             res.append(j+1)
         elif today_yyyy < start_yyyy:
@@ -46,7 +44,6 @@ def solution(today, terms, privacies):
                     res.append(j+1)
                 elif today_dd <= start_dd:
                     continue
-        # print("!!",start_yyyy,start_mm,start_dd)
     return res
 
 def date(str_date):
@@ -54,9 +51,3 @@ def date(str_date):
     mm=str_date[5:7]
     dd=str_date[8:]
     return(int(yyyy),int(mm),int(dd))
-
-
-
-
-
-
